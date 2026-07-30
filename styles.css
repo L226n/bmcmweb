@@ -1,115 +1,87 @@
+img { 
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated;                 /* Universal support since 2021   */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
 html {
-  font-family: "Rubik", sans-serif;
-  color: white;
+  font-family: "Griffy", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
-p {
-	font-size: 1.3vw;
+body {
+	margin: 0px;
 }
-a {
-	font-size: 1.3vw;
-}
-h1 {
-	font-size: 2vw;
-}
-h3 {
-	font-size: 1.2vw;
-}
-h2 {
-	font-size: 1.5vw;
-}
-.catthumb {
-	height: 15.7vw;
-	border-radius: 0.5vw;
-}
-.center {
-	text-align: center;
-}
-.catitem {
-	position: relative;
-	padding: 1vw;
-	margin: 0 1vw 2vw 1vw;
-	background: rgba(0, 0, 0, 0.5);
-	width: 15.7vw;
-	transition-duration: 250ms;
-	border-radius: 0.5vw;
-}
-.catitem:hover {
-	box-shadow: 0px 0px 10px 4px #000000;
-}
-.catbox {
-	display: flex;
-	flex-wrap: wrap;
+#bgimage {
 	width: 100%;
 }
-.dark {
-	position: absolute;
-	top: 1vw;
-	background: black;
-	height: 15.7vw;
-	width: 15.7vw;
-	opacity: 0;
-	transition-duration: 250ms;
-	border-radius: 0.5vw;
+h1 {
+	font-size: 3vw;
 }
-.dark:hover {
-	opacity: 0.5;
+h2 {
+	font-size:2vw;
 }
-#headerbox {
-	margin: 2vw 0 2vw 1vw;
-	padding: 1vw;
-	background: rgba(0, 0, 0, 0.5); 
-	transition-duration: 250ms;
-	width: 95.5%;
-	border-radius: 0.5vw;
+#topbar > div {
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	margin:auto;
 }
-#headerbox:hover {
-	box-shadow: 0px 0px 10px 4px #000000;
+.topimg {
+	width:12vw;
 }
-#mainbox {
-	position: relative;
-	width: 97%;
-	margin: auto;
+.retarddiv:hover {
+	cursor:pointer;
 }
-#mainimg {
-	width: 33vw;
-	height: 33vw;
-	border-radius: 0.5vw;
-	transition-duration: 250ms;
+.retarddiv:hover > .topimg {
+	animation-name: fuck;
+	animation-duration: 1s;
+	filter: brightness(50%);
+	animation-iteration-count: infinite;
 }
-#mainimg:hover {
-	box-shadow: 0px 0px 10px 4px #000000;
+#topbar {
+	position:absolute;
+	top:15vmax;
+	display:flex;
+	width:100vw;
 }
-#imgbox {
-	margin-left: 2vw;
-	min-width: 57vw;
-	padding: 0 2vw 0 2vw;
-	background: lightgrey;
-	border-radius: 0.5vw;
-	transition-duration: 250ms;
+.retarddiv {
+	width:12vw;
+	height:12vw;
 }
-#imgbox:hover {
-	box-shadow: 0px 0px 10px 4px #000000;
+@keyframes dothat {
+	0%	{transform:scale(0,1);}
+	25%	{transform:scale(1,1);}
+	50%	{transform:scale(0,1);}
+	75%	{transform:scale(-1,1);}
+	100%	{transform:scale(0,1);}
 }
-#imgbox > p {
-	line-height: 2vw;
-}
-#imgallery {
+#mainsec {
+	position:absolute;
+	top:30vmax;
 	display: flex;
 }
-#imgallery > a > img {
-	margin-right: 1vw;
-	height: 4.5vw;
-	box-shadow: 0px 0px 3px 1px #000000;
+#mainsec> div {
+	margin:2vw;
 }
-#bottombox {
-	margin-top: 2vw;
-	padding: 1vw;
-	background: rgba(0, 0, 0, 0.5); 
-	transition-duration: 250ms;
-	width: 98%;
-	border-radius: 0.5vw;
+.sideimg {
+	width:8vw;
 }
-#bottombox:hover {
-	box-shadow: 0px 0px 10px 4px #000000;
+.retarddiv2:hover {
+	cursor:pointer;
 }
-
+.retarddiv2:hover > img{
+	animation-name: dothat;
+	animation-duration:1s;
+	animation-iteration-count:infinite;
+	filter: brightness(50%);
+	animation-timing-function: linear(0,0.02,0.08,0.18,0.32,0.5,0.68,0.82,0.92,0.98,1);
+}
+@keyframes fuck {
+	0%	{transform:scale(-1,0.8);transform:rotate(180deg);}
+	50%	{transform:scale(0.8,-1);}
+	100%	{transform:scale(-1,0.8);transform:rotate(-180deg);}
+}
