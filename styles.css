@@ -108,7 +108,7 @@ h2 {
 }
 #ifuckedup {
 	display:flex;
-	width: 20vw;
+	width: 40vw;
 	flex-wrap: wrap;
 }
 @keyframes dothat {
@@ -117,6 +117,13 @@ h2 {
 	50%	{transform:scale(-1,1);}
 	75%	{transform:scale(0,1);}
 	100%	{transform:scale(1,1);}
+}
+@keyframes dothat2 {
+	0%	{transform:scale(1,1);filter:hue-rotate(0deg);}
+	25%	{transform:scale(0,1);filter:hue-rotate(270deg);}
+	50%	{transform:scale(-1,1);filter:hue-rotate(540deg);}
+	75%	{transform:scale(0,1);filter:hue-rotate(810deg);}
+	100%	{transform:scale(1,1);filter:hue-rotate(1080deg);}
 }
 #mainsec {
 	position:absolute;
@@ -147,13 +154,15 @@ h2 {
 #bullshit > img {
 }
 #bullshit {
+	width: 50vw;
 	display:flex;
+	flex-wrap: wrap;
 }
 .fu {
 	position:absolute;
 	top: 2vmax;
 	width:12vw;
-	animation-name: dothat;
+	animation-name: dothat2;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear(0,0.02,0.08,0.18,0.32,0.5,0.68,0.82,0.92,0.98,1);
 	animation-duration:1s;
