@@ -201,7 +201,7 @@ h2 {
 .kys:hover > .arg {
 	animation-name: poo;
 	animation-iteration-count: infinite;
-	animation-duration:1000s;
+	animation-duration:999s;
 }
 @keyframes poo {
 	0% {transform: matrix3d(5, 4, 3, 2, -1434325432, 0.01, 6, 6, 0, 0, 1, 0, 0, 0, 0, 1);}
