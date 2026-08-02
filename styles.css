@@ -201,10 +201,10 @@ h2 {
 .kys:hover > .arg {
 	animation-name: poo;
 	animation-iteration-count: infinite;
-	animation-duration:999s;
+	animation-duration:9s;
 }
 @keyframes poo {
-	0% {transform: matrix3d(5, 4, 3, 2, -1432, 0.01, 6, 6, 0, 0, 1, 0, 0, 0, 0, 1);}
+	0% {transform: matrix3d(1, 2, 3, 4, 3, 9, 4, 1, 7, 8, 1, 5, 5, 5, 5, 5);}
 	100% {transform:rotateZ(0deg);}
 }
 .arg {position:absolute;top:0;left:0;}
