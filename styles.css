@@ -192,11 +192,13 @@ h2 {
 }
 .kys {
 	position:relative;
-	margin:2vw;
-}
-.kys:hover > .haha {
-	animation-name: f;
-	animation-
+	overflow: hidden;
+	padding:2vw;
+	margin:1vw;
+	background:rgba(0,0,0,0.6);
+	border-width:0.5vw;
+	border-style:ridge;
+
 }
 .kys:hover > .arg {
 	
@@ -204,8 +206,23 @@ h2 {
 	animation-iteration-count: infinite;
 	animation-duration:9s;
 }
+.kys:hover > .haha {
+	display:block;
+}
+.kys:hover + h2 {
+	animation-name: chatgpt;
+	animation-iteration-count: infinite;
+	animation-duration:1s;
+}
+.kys + h2 {
+	pointer-events: none;
+}
 @keyframes poo {
 	0% {transform: matrix3d(1, 2, 3, 4, 3, 9, 4, 1, 7, 8, 1, 5, 5, 5, 5, 5);filter: saturate(100);}
 	100% {transform:rotateZ(180deg);filter:hue-rotate(359deg);filter: saturate(100);}
 }
-.arg {position:absolute;top:0;left:0;}
+.haha {position:absolute;top:2vw;left:2vw;display:none;}
+@keyframes chatgpt {
+	0% {transform: matrix3d(50,3, 40, 6, 0, 1, 0, 0, 5, 0, 1, 0, 0, 0, 0, 1);}
+	100% {transform: scale(-1);}
+}
