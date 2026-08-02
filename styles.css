@@ -173,4 +173,38 @@ h2 {
 	animation-timing-function: linear(0,0.02,0.08,0.18,0.32,0.5,0.68,0.82,0.92,0.98,1);
 	animation-duration:1s;
 }
-
+.absposimagebullshit {
+	position:absolute;
+	display:flex;
+	align-items: center;
+	flex-direction: row-reverse;
+}
+.absposimagebullshit > h2 {
+	color: white;
+	filter: drop-shadow(12px 14px 8px #000000);
+}
+.kys:hover {
+	cursor: pointer;
+}
+.kys > img {
+	width:12vw;
+	height:12vw;
+}
+.kys {
+	position:relative;
+	margin:2vw;
+}
+.kys:hover > .haha {
+	animation-name: f;
+	animation-
+}
+.kys:hover > .arg {
+	animation-name: poo;
+	animation-iteration-count: infinite;
+	animation-duration:1000s;
+}
+@keyframes poo {
+	0% {transform: matrix3d(5, 4, 3, 2, -1434325432, 0.01, 6, 6, 0, 0, 1, 0, 0, 0, 0, 1);}
+	100% {transform:rotateZ(0deg);}
+}
+.arg {position:absolute;top:0;left:0;}
