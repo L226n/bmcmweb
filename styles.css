@@ -1,3 +1,9 @@
+#mydiv, #mypiv {
+	position:absolute;
+	z-index:1000;
+	top:-3vw;
+	left:2;
+}
 img { 
     image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
     image-rendering: -moz-crisp-edges;          /* Firefox                        */
@@ -56,11 +62,12 @@ img {
 	filter: drop-shadow(0.25vw 0.25vw 0.5vw #000000);
 	font-size:3.5vw;
 }
-#trix {
-	position:absolute;
-	top:-3vw;
-	left:2;
-	z-index:999;
+#trix, #star {
+	position:relative;
+	width:6.5vw;
+}
+#trix:hover, #star:hover {
+	cursor:all-scroll;
 }
 #raritytalk {
 	position:absolute;
